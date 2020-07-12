@@ -15,5 +15,5 @@ interface UserDao {
     fun insert(entity: UserEntity): Result<UserEntity>
 
     @Select
-    fun findById(id: String): Optional<UserEntity>
+    fun selectById(id: String): Optional<UserEntity>
 }
